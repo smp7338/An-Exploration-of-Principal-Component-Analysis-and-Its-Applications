@@ -1,4 +1,12 @@
-% Flight Test Dataset
+% Create Flight Test Dataset
+% Variables:
+%   1. Air Speed (m/s)
+%   2. Climb Rate (m/s)
+%   3. Power Consumption (W)
+%   4. Vibration Amplitude (m/s^2)
+%   5. Yaw Rate Stability Error (deg/s)
+clc, clear, close all
+
 X = [12.1 1.8 94  0.42 1.9;
      11.4 1.3 89  0.40 2.5;
      13.2 2.1 102 0.48 1.4;
@@ -15,3 +23,4 @@ varNames = ["Air Speed (m/s)","Climb Rate (m/s)","Power (W)", ...
 
 % Save dataset to a .mat file
 save('flight_test_data.mat','X','varNames');
+
